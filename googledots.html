@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Dots Animation</title>
+    <style>
+        @keyframes wave {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+                
+        .dot {
+            position: relative;
+            top: 350px;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-left: 10px;
+            animation: wave 2s infinite;
+        }
+
+        .a {
+            background-color: blue;
+            animation-delay: 0s;
+        }
+
+        .b {
+            background-color: red;
+            animation-delay: 0.5s;
+        }
+
+        .c {
+            background-color: yellow;
+            animation-delay: 1s;
+        }
+
+        .d {
+            background-color: green;
+            animation-delay: 1.5s;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <div class="dot a"></div>
+        <div class="dot b"></div>
+        <div class="dot c"></div>
+        <div class="dot d"></div>
+    </center>
+</body>
+</html>
